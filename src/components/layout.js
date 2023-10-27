@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./layout.css"
+import Footer from "./footer"
 
 export default function Layout({ children }) {
     return (
@@ -9,15 +10,14 @@ export default function Layout({ children }) {
                 <h3>Estudos de Jamstack - Gatsby</h3>
                 <nav className="topnav">
                     <Link to="/">Inicio</Link>
-                    <Link to="pagina2">Página 2</Link>
+                    <Link to="/pagina2">Dados externos</Link>
+                    <Link to="/pagina3">Dados internos</Link>
                 </nav>
             </div>
             <div className="main">
                 {children}
             </div>
-            <div className="footer">
-                <h3>Aqui vai um rodapé</h3>
-            </div>
+            <Footer copyrightYear="2023" />
         </main>
     )
 }

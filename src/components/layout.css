@@ -17,12 +17,6 @@
     padding: 10px;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: aquamarine;
-    padding: 10px;
-}
-
 .topnav {
     overflow: hidden;
     background-color: #AECFDF;
